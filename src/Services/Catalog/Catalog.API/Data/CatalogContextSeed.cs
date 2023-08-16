@@ -1,8 +1,8 @@
-﻿using Catelog.API.Entities;
+﻿using Catalog.API.Entities;
 using MongoDB.Driver;
 using System.Collections.Generic;
 
-namespace Catelog.API.Data
+namespace Catalog.API.Data
 {
     public class CatalogContextSeed
     {

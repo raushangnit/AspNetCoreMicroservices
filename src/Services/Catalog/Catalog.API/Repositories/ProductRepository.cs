@@ -1,11 +1,11 @@
-﻿using Catelog.API.Entities;
+﻿using Catalog.API.Entities;
 using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
-using Catelog.API.Data;
+using Catalog.API.Data;
 
-namespace Catelog.API.Repositories
+namespace Catalog.API.Repositories
 {
     public class ProductRepository : IProductRepository
     {

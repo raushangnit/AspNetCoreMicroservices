@@ -1,9 +1,9 @@
-﻿using Catelog.API.Entities;
+﻿using Catalog.API.Entities;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using System;
 
-namespace Catelog.API.Data
+namespace Catalog.API.Data
 {
     public class CatalogContext: ICatalogContext
     {

@@ -1,5 +1,5 @@
-﻿using Catelog.API.Entities;
-using Catelog.API.Repositories;
+﻿using Catalog.API.Entities;
+using Catalog.API.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Catelog.API.Controllers
+namespace Catalog.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

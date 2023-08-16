@@ -1,8 +1,8 @@
-﻿using Catelog.API.Entities;
+﻿using Catalog.API.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Catelog.API.Repositories
+namespace Catalog.API.Repositories
 {
     public interface IProductRepository
     {
