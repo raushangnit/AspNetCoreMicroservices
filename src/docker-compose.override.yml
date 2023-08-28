@@ -135,7 +135,7 @@ services:
         - discount.api
         - ordering.api
     ports:
-      - "8081:80"
+      - "8010:80"
 
 
   shopping.aggregator:
@@ -166,3 +166,25 @@ services:
       - ordering.api
     ports:
       - "8006:80"
+
+  elasticsearch:
+   container_name: elasticsearch
+   ports:
+    - 9200:9200
+   volumes:
+    - elasticsearch-data:/usr/share/elasticsearch/data
+   environment:
+    - xpack.monitoring.enabled=true
+    - xpack.watcher.enabled=false
+    - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    - discovery.type=single-node
+
+  kibana:
+   container_name: kibana
+   ports:
+    - 5601:5601
+   depends_on:
+    - elasticsearch
+   environment:
+    - ELASTICSEARCH_URL=http://localhost:9200
+   
