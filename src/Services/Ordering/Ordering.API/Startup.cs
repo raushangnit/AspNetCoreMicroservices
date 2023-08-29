@@ -1,15 +1,14 @@
+using EventBus.Message.Common;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Ordering.Infrastructure;
-using Ordering.Application;
-using MassTransit;
-using EventBus.Message.Events;
-using EventBus.Message.Common;
 using Ordering.API.EventBusConsumer;
+using Ordering.Application;
+using Ordering.Infrastructure;
 
 namespace Ordering.API
 {

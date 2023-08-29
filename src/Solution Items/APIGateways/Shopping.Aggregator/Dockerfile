@@ -7,6 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 COPY ["Solution Items/APIGateways/Shopping.Aggregator/Shopping.Aggregator.csproj", "Solution Items/APIGateways/Shopping.Aggregator/"]
+COPY ["Solution Items/BuildingBlocks/Common.Logging/Common.Logging.csproj", "Solution Items/BuildingBlocks/Common.Logging/"]
 RUN dotnet restore "Solution Items/APIGateways/Shopping.Aggregator/Shopping.Aggregator.csproj"
 COPY . .
 WORKDIR "/src/Solution Items/APIGateways/Shopping.Aggregator"
